@@ -6,6 +6,9 @@ const App=()=> {
   return (
     <main >
       <Header />
+      <Hero/>
+      
+      
       </main>
   );
 };

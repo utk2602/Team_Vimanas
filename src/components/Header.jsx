@@ -9,7 +9,7 @@ if (typeof document !== 'undefined') {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
+//items appearing in the nav bar and news section
   const navItems = [
     { name: 'RACES', icon: Flag, href: '#race-calendar' },
     { name: 'DRIVERS', icon: User, href: '#driver-standings' },
@@ -24,7 +24,7 @@ const Header = () => {
     "NEW PARTNERSHIP ANNOUNCED 🤝",
   ];
   
-
+//Vimaanas logo with name present on the top left corner of the header , i wrote a lot of tailwind in it 
   return (
     <header className="fixed w-full z-50 bg-black/90 backdrop-blur-sm">
       <div className="border-b border-white/10">
@@ -38,15 +38,14 @@ const Header = () => {
   className="w-8 h-8 rounded-full overflow-hidden mr-2"
 >
   <img
-     // Image path inside the 'public' folder
     alt="Logo"
     className="w-full h-full object-cover"
   />
 </motion.div>
-
-
              Team Vimaanas
             </a>
+            {/*//nav bar items present in the header with them pointing to their particular sections
+*/}
             <nav className="hidden md:flex items-center space-x-6">
               {navItems.map((item) => (
                 <motion.a
@@ -65,6 +64,7 @@ const Header = () => {
                 whileHover={{ scale: 1.1 }}
                 className="bg-red-600 text-black px-4 py-2 rounded-full text-sm font-medium cursor-pointer"
               >
+                {/*normal button no context*/}
                 RACE DAY LIVE
               </motion.div>
               <button
@@ -77,10 +77,12 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/*moving items present in the horizontal bar*/}
       <div className="bg-red-600 overflow-hidden">
         <div className="container mx-auto px-4 relative">
           <div className="flex items-center h-10 text-sm overflow-hidden">
-            <motion.div
+            {/*dont know shit about this*/}
+            <motion.div 
               animate={{
                 x: [0, -1000],
                 transition: {
@@ -94,6 +96,7 @@ const Header = () => {
               }}
               className="flex items-center space-x-8 whitespace-nowrap"
             >
+              {/*content of the moving horizontal bar*/}
               {newsItems.concat(newsItems).map((item, index) => (
                 <span key={index} className="inline-block text-black">{item}</span>
               ))}
