@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <div className="pt-32 pb-20 relative overflow-hidden">
+    <div className="pt-32 pb-20 pl-7  relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -23,7 +23,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-7xl font-bold mb-6 leading-none text-white"
+          className="text-6xl font-bold mb-6 leading-none text-white pt-8 "
         >
           RACING
           <br />

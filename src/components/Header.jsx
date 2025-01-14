@@ -46,7 +46,7 @@ const Header = () => {
             </a>
             {/*//nav bar items present in the header with them pointing to their particular sections
 */}
-            <nav className="hidden md:flex items-center space-x-6">
+            <nav className="hidden md:flex items-center space-x-6 text-white">
               {navItems.map((item) => (
                 <motion.a
                   key={item.name}

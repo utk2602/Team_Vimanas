@@ -20,7 +20,7 @@ const LatestAchievements = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-black p-6 rounded-lg border border-white/10 hover:border-red-600 transition-all duration-300 group"
+              className="bg-black p-6 rounded-lg border border-white/10 hover:border-red-600 transition-all duration-300 group text-white"
             >
               <achievement.icon className="w-12 h-12 text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold mb-2">{achievement.title}</h3>
