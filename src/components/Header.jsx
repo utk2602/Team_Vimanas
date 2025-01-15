@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion'
-import { User, ShoppingBag, Menu, Flag, Clock, Trophy, Play } from 'lucide-react'
+import { User, ShoppingBag, Menu, Flag, Clock, Trophy, Play } from 'lucide-react'/* i searched for these components badi mehnat lag gayi*/
 import { useState, useEffect } from 'react'
 
 if (typeof document !== 'undefined') {
@@ -39,12 +39,13 @@ const Header = () => {
 >
   <img
     alt="Logo"
+    href="https://scontent.fbom3-2.fna.fbcdn.net/v/t39.30808-1/273202719_4855039447877022_488512644915742406_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=vg3sMVsWp6kQ7kNvgGlU29L&_nc_zt=24&_nc_ht=scontent.fbom3-2.fna&_nc_gid=A8r-K9QlxEaX279FPFy6ZVK&oh=00_AYD6jGrle1xltswHoDPsGkR4CsJ6KnjCo4H9d8-dA_EPcA&oe=678D4CE5"
     className="w-full h-full object-cover"
   />
 </motion.div>
              Team Vimaanas
             </a>
-            {/*//nav bar items present in the header with them pointing to their particular sections
+            {/*nav bar items present in the header with them pointing to their particular sections
 */}
             <nav className="hidden md:flex items-center space-x-6 text-white">
               {navItems.map((item) => (

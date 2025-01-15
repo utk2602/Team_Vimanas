@@ -1,16 +1,14 @@
-'use client'
 
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <div className="pt-32 pb-20 pl-7  relative overflow-hidden">
+    <div className="pt-32 pb-20 pl-7 relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="absolute top-0 right-0 w-96 h-96 bg-red-600 rounded-full filter blur-3xl opacity-20 z-0"
       />
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
@@ -35,7 +33,8 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg text-white/80 mb-8 max-w-lg"
         >
-          Experience the thrill of Formula 1 with Williams Racing. Join us as we push the boundaries of speed and innovation.
+          Experience the thrill of Formula 1 with{' '}
+          <span className="text-red-600 font-semibold">Team Vimaanas</span>. Join us as we push the boundaries of speed and innovation.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
