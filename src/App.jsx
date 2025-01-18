@@ -6,6 +6,10 @@ import LatestNews from "./components/LatestNews";
 import Statistics from "./components/Statistics";
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
+import DriverStandings from "./components/DriverStandings";
+import TeamSection from "./components/TeamSection";
+import RaceCalendar from "./components/RaceHighlights";
+import Partners from "./components/Partners";
 
 const App = () => {/*used chatgpt to align the hero section wasnt able to do it on my own , i will try to work more on alignment rn*/
   return (
@@ -26,7 +30,11 @@ const App = () => {/*used chatgpt to align the hero section wasnt able to do it 
         <LatestAchievements />
         <Statistics />
         <LatestNews />
-        <Newsletter />
+        <RaceCalendar/>
+        <DriverStandings/>
+        <TeamSection/>
+         <Newsletter />
+         <Partners/>
       </div>
 
       {/* Footer */}
