@@ -10,6 +10,7 @@ import DriverStandings from "./components/DriverStandings";
 import TeamSection from "./components/TeamSection";
 import RaceCalendar from "./components/RaceHighlights";
 import Partners from "./components/Partners";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {/*used chatgpt to align the hero section wasnt able to do it on my own , i will try to work more on alignment rn*/
   return (
@@ -39,6 +40,7 @@ const App = () => {/*used chatgpt to align the hero section wasnt able to do it 
 
       {/* Footer */}
       <Footer />
+      <Analytics/>
     </main>
   );
 };
