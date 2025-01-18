@@ -1,7 +1,7 @@
 
-import { motion } from 'framer-motion'
-import { User, ShoppingBag, Menu, Flag, Clock, Trophy, Play } from 'lucide-react'/* i searched for these components badi mehnat lag gayi*/
-import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion';
+import { User, ShoppingBag, Menu, Flag, Clock, Trophy, Play } from 'lucide-react';/* i searched for these components badi mehnat lag gayi*/
+import { useState, useEffect } from 'react';
 
 if (typeof document !== 'undefined') {
   document.documentElement.style.scrollBehavior = 'smooth';

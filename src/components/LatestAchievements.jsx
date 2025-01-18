@@ -1,6 +1,6 @@
 
-import { motion } from 'framer-motion'
-import { Trophy, Flag, Clock } from 'lucide-react'
+import { motion } from 'framer-motion';
+import { Trophy, Flag, Clock } from 'lucide-react';
 
 const achievements = [
   { icon: Trophy, title: "PODIUM FINISH", description: "P3 at Bengaluru Grand Prix" },
