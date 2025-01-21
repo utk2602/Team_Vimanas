@@ -99,7 +99,7 @@ const Header = () => {
             >
               {/*content of the moving horizontal bar*/}
               {newsItems.concat(newsItems).map((item, index) => (
-                <span key={index} className="inline-block text-black">{item}</span>
+                <span key={index} className="inline-block text-white">{item}</span>
               ))}
             </motion.div>
           </div>
